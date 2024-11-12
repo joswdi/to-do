@@ -21,7 +21,7 @@ function App() {
       checked: false,
     }
   ])
-
+  console.log(todoList)
   const addNewTask = () => {
     if (document.querySelector("#filled-basic").value) {
     const newToDo = [...todoList]

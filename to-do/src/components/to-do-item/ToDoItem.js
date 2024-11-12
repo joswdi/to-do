@@ -5,8 +5,8 @@ const ToDoItem = ({ todo, setToDo }) => {
   const { name, id, checked } = todo;
 
   const deleteTask = (e) => {
-    setToDo((previousState) => {
-      const newState = previousState.filter((el) => el.id !== el.target.id)
+    setToDo((todoList) => {
+      const newState = todoList.filter((el) => el.id !== el.target.id)
       return newState
     });
   };
